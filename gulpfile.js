@@ -17,12 +17,12 @@ var config = {
     filename: 'bundle.js'
   },
   templates: {
-    source: './src/**/*.html',
+    source: './src/**/*.html'  ,
     watch: './src/**/*.html',
     destination: './public/'
   },
   styles: {
-    source: './src/**/*.css',
+    source: ['./src/**/*.css', './node_modules/leaflet/dist/leaflet.css', './bower_components/leaflet-dvf/dist/css/dvf.css'],
     watch: './src/**/*.css',
     destination: './public/css/'
   },
